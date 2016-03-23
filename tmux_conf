@@ -1,0 +1,15 @@
+set -g mode-mouse on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+setw -g xterm-keys on
+bind -n M-Right next-window
+bind -n M-Left previous-window
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+bind -n M-Space select-pane -D
+bind -n F1 select-window -t 0
+bind -n F2 select-window -t 1
+bind -n F3 select-window -t 2
+bind -n F4 select-window -t 3
+bind -n F5 select-layout even-vertical
+bind -n C-Tab select-window -n
