@@ -1,0 +1,5 @@
+escape ^bb
+multiuser on
+term xterm
+acladd timkay
+defwrap off
