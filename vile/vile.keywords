@@ -1,0 +1,10 @@
+.class Action:BC1
+.class Comment:C4
+.class Error:RC1
+.class Ident2:C3
+.class Keyword:BC3
+.class Keyword2:BC1
+.class Literal:C1
+.class Number:C6
+.class Preproc:C2
+.class Type:BC2
