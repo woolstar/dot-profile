@@ -1,0 +1,3 @@
+syntax on
+set background=dark
+set ai sw=2 softtabstop=2 ts=8 expandtab
