@@ -1,7 +1,8 @@
-^L	clear
+	clear
 a	alias
 caly	cal `date +%Y`
 d	ls -CF --color=auto
+D	ls -CF --color=auto -1
 dte	d -trl | tail
 e	vim
 gd	git diff .
@@ -14,8 +15,8 @@ pd	pushd
 po	popd
 res	eval `resize`
 rycp	rsync --partial --progress --rsh=ssh
-skey	(cd /tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add
-ul	mv !* x; cp x !*; rm -f x
+skey	(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add
+ul	'mv \!* .xtmp && cp .xtmp \!* && rm -f .xtmp'
 xc	xcalc -rpn
-xf	setenv SSH_AUTH_SOCK `find /tmp -name "agent*" -print | head -1`
+xf	setenv SSH_AUTH_SOCK `find $PREFIX/tmp -name "agent*" -print | head -1`
 xk	echo "setenv SSH_AUTH_SOCK $SSH_AUTH_SOCK"
