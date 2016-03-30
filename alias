@@ -1,8 +1,8 @@
 	clear
 a	alias
 caly	cal `date +%Y`
-d	ls -CF --color=auto
-D	ls -CF --color=auto -1
+d	ls -CF --group-directories-first --color=auto
+D	ls -CF --group-directories-first --color=auto -1
 dte	d -trl | tail
 e	vim
 gd	git diff .
@@ -11,6 +11,10 @@ jk	cd $PROJ
 k	kill -9
 l	clear
 m	more
+q	'echo "cd "`pwd`'
+qp	"pwd > ~/.qdir ; echo 'qpush'"
+qj	'cd `cat ~/.qdir`'
+ve	vile
 pd	pushd
 po	popd
 res	eval `resize`
