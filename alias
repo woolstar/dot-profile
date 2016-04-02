@@ -12,11 +12,12 @@ k	kill -9
 l	clear
 m	more
 q	'echo "cd "`pwd`'
-qp	"pwd > ~/.qdir ; echo 'qpush'"
-qj	'cd `cat ~/.qdir`'
 ve	vile
 pd	pushd
 po	popd
+ifi	"find . -iname '*'\!*'*' -print"
+qj	"dirs -L ~/.qdir"
+qp	"dirs -S ~/.qdir ; echo pushed"
 res	eval `resize`
 rycp	rsync --partial --progress --rsh=ssh
 skey	(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add

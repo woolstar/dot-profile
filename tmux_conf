@@ -2,8 +2,8 @@ set -g mode-mouse on
 set -g mouse-select-pane on
 set -g mouse-resize-pane on
 setw -g xterm-keys on
-bind -n M-Right next-window
 bind -n M-Left previous-window
+bind -n M-Right next-window
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 bind -n M-Space select-pane -D
