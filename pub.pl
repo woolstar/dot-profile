@@ -12,12 +12,17 @@ sub pub_alias
   {
     chomp ;
     my ($nam,$cmd)= split /\t/ ;
+    my $ex ;
+
+    if ( $nam =~ /\.(?<ext>\w+)$/ ) {
+      $ex= $+{ext} ;
+      $nam =~ s/\.\w+$// ;
+    }
+
     print "$nam, " ;
     $cmd= "'$cmd'" unless $cmd =~ /^['"]/ ;
-    say $CSHFILE "alias\t$nam\t$cmd" ;
-
-    $cmd =~ s/\s+-c// if /ssh-ageng/ ;
-    say $SHFILE "alias\t$nam=$cmd" ;
+    say $CSHFILE "alias\t$nam\t$cmd" unless $ex && $ex ne 'csh' ;
+    say $SHFILE "alias\t$nam=$cmd" unless $ex && $ex ne 'sh' ;
   }
   say " done."
 }

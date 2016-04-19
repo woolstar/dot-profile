@@ -25,8 +25,11 @@ qv	"cat ~/_places"
 qe	"vim ~/_places"
 ul	'mv \!* .xtmp && cp .xtmp \!* && rm -f .xtmp'
 xc	'xcalc -rpn -fg white -bg midnightblue'
-xf	setenv SSH_AUTH_SOCK `find $PREFIX/tmp -name "agent*" -print | head -1`
-xk	echo "setenv SSH_AUTH_SOCK $SSH_AUTH_SOCK"
+xf.csh	setenv SSH_AUTH_SOCK `find $PREFIX/tmp -name "agent*" -print | head -1`
+xf.sh	export SSH_AUTH_SOCK=`find $PREFIX/tmp -name "agent*" -print | head -1`
+xk.csh	echo "setenv SSH_AUTH_SOCK $SSH_AUTH_SOCK"
+xk.sh	echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 res	eval `resize`
 rycp	rsync --partial --progress --rsh=ssh
-skey	(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add
+skey.csh	(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add
+skey.sh		(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent` ; ssh-add
