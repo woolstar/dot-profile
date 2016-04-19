@@ -11,7 +11,9 @@ sub pub_alias
   while (<$SRC>)
   {
     chomp ;
-    my ($nam,$cmd)= split /\t/ ;
+    my ($nam,$cmd)= split /\t+/ ;
+    next unless $nam && $cmd ;
+
     my $ex ;
 
     if ( $nam =~ /\.(?<ext>\w+)$/ ) {
