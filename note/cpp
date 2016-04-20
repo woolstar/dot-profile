@@ -1,0 +1,47 @@
+blogs
+
+C++ threads/memory model
+http://www.hboehm.info/gc/index.html
+
+gcc devel
+http://hubicka.blogspot.ca/
+
+c++ templates
+blog.biicode.com
+
+bbfa (old stdlib)
+https://code.dev.bloomberg.com/opengrok/xref/robo_svn/trunk/legacy/fabcmn/
+
+C++11 stuff
+http://thbecker.net/start_page_showing_articles.html
+
+--
+books (RDLI)
+The C++ Standard Library: A Tutorial and Reference
+by Nicolai M. Josuttis
+
+C++ Templates: The Complete Guide
+by David Vandevoorde and Nicolai M. Josuttis
+
+Generic Programming and the STL: Using and Extending the C++ Standard Template Library
+by Matthew H. Austern
+
+STL Tutorial and Reference Guide:
+C++ Programming with the Standard Template Library
+by David R. Musser, Gillmer J. Derge and Atul Saini
+
+--
+code libraries
+
+Dietmar Tuple:
+https://code.dev.bloomberg.com/opengrok/xref/devgit/feeds_fw/framework/Bloomberg/Tickers/FrontEnd/Tuple.h
+https://github.com/dietmarkuehl/kuhllib/wiki/STL-2.0
+
+google allocators
+https://rawgit.com/google/cxx-std-draft/allocator-paper/allocator_user_guide.html
+
+google v8 double to string conversion
+https://code.dev.bloomberg.com/opengrok/xref/dpkg/double-conversion/src/double-conversion.h
+
+
+--
