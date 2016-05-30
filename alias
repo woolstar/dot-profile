@@ -19,8 +19,8 @@ pd	pushd
 po	popd
 ifi	"find . -iname '*'\!*'*' -print"
 mi	"make -f make.$CPU"
-qj	"dirs -L ~/.qdir"
-qp	"dirs -S ~/.qdir ; echo pushed"
+qj.csh	"dirs -L ~/.qdir"
+qp.csh	"dirs -S ~/.qdir ; echo pushed"
 qv	"cat ~/_places"
 qe	"vim ~/_places"
 ul	'mv \!* .xtmp && cp .xtmp \!* && rm -f .xtmp'
