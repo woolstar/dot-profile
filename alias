@@ -18,6 +18,7 @@ ve	vile
 pd	pushd
 po	popd
 ifi	"find . -iname '*'\!*'*' -print"
+ma	make
 mi	"make -f make.$CPU"
 qj.csh	"dirs -L ~/.qdir"
 qp.csh	"dirs -S ~/.qdir ; echo pushed"
