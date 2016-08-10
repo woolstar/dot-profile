@@ -30,6 +30,7 @@ ul	'mv \!* .xtmp && cp .xtmp \!* && rm -f .xtmp'
 xc	'xcalc -rpn -fg white -bg midnightblue'
 xf.csh	setenv SSH_AUTH_SOCK `find $PREFIX/tmp -name "agent*" -print | head -1`
 xf.sh	export SSH_AUTH_SOCK=`find $PREFIX/tmp -name "agent*" -print | head -1`
+tund	'ssh -v -D 2080 z2'
 xk.csh	echo "setenv SSH_AUTH_SOCK $SSH_AUTH_SOCK"
 xk.sh	echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 res	eval `resize`
