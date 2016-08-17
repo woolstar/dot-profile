@@ -20,6 +20,7 @@ po	popd
 ifi	"find . -iname '*'\!*'*' -print"
 ma	make
 mi	"make -f make.$CPU"
+q	"echo cd $PWD"
 qj.csh	"dirs -L ~/.qdir"
 qp.csh	"dirs -S ~/.qdir ; echo pushed"
 qv	"cat ~/_places"
