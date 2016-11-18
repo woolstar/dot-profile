@@ -13,4 +13,6 @@ bind -n F3 select-window -t 2
 bind -n F4 select-window -t 3
 bind -n F5 select-layout even-vertical
 bind -n S-F5 select-layout even-horizontal
+bind -n F12 new-window
+bind -n S-F12 source-file ~/.tmux.conf
 bind -n C-Tab select-window -n
