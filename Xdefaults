@@ -48,6 +48,14 @@ xterm*Foreground:white
 xterm*geometry:84x48
 xterm*saveLines:2048
 
+
+! ubuntu -- high DPI
+
+UXTerm*faceName:      Noto Mono
+UXTerm*faceSize:      16
+UXTerm*renderFont:    true
+UXTerm*geometry:      92x48
+
 ! standard urxvt
 
 urxvt*loginShell:         true
