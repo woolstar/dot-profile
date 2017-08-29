@@ -1,0 +1,8 @@
+host mpaz1 z1
+	Hostname 192.55.95.12
+	User woolstar
+
+host mpaz2 z2
+	Hostname 192.55.95.13
+	User woolstar
+
