@@ -2,7 +2,7 @@
 setenv CPU `arch`
 
 if ( $?prompt ) then
-  source ~/.alias
+  source ~/.alias.csh
   set prompt=`hostname`'% '
 endif
 
