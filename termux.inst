@@ -11,7 +11,7 @@ fish
 git
 gnupg
 googletest
-graphicsmagick++
+graphicsmagick
 graphicsmagick-dev
 imagemagick-dev
 libandroid-support
