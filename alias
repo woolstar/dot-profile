@@ -2,7 +2,7 @@
 a	alias
 caly	cal `date +%Y`
 d	ls -CF --group-directories-first --color=auto
-D	ls -CF --group-directories-first --color=auto -1
+D	ls -C --group-directories-first --color=auto -1
 dte	d -trl | tail
 e	vim
 gb	git branch
