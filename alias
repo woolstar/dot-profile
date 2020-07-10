@@ -6,8 +6,12 @@ D	ls -C --group-directories-first --color=auto -1
 dte	d -trl | tail
 e	vim
 gb	git branch
+gca	git commit --amend
 gd	git diff -b .
-gs	git status
+ggo	git checkout
+gl	git log --abbrev-commit -8
+glo	git log --oneline -44
+gs	git status -s -b
 gup	'git pull --rebase origin master'
 jk	cd $PROJ
 k	kill -9
