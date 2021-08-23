@@ -1,2 +1,3 @@
   git config --global user.email 'woolstar@anywhere.com'
   git config --global user.name 'Wool'
+  git config --global core.editor vim
