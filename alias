@@ -41,5 +41,6 @@ xk.sh	echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 xfs	'fc-list | cut -f2 -d: | grep -i mono | sort -u'
 res	eval `resize`
 rycp	rsync --partial --progress --rsh=ssh
+sapt	sudo apt
 skey.csh	(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent -c` ; ssh-add $SSHKEY
 skey.sh		(cd $PREFIX/tmp ; rm -fr ssh*) ; eval `ssh-agent` ; ssh-add $SSHKEY
