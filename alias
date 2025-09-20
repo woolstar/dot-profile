@@ -23,19 +23,23 @@ po	popd
 ifi	"find . -iname '*'\!*'*' -print"
 ma	make
 mi	"make -f make.$CPU"
+mu	'sudo mount -t drvfs'
 q	'echo cd $PWD'
 qj.csh	"dirs -L ~/.qdir"
 qp.csh	"dirs -S ~/.qdir ; echo pushed"
 qv	"cat ~/_places"
 qe	"vim ~/_places"
+sapt	'sudo apt'
 ta	'tmux new-session --target 0'
 th	'tmux attach'
 tre	"tmux source-file ~/.tmux.conf"
 ul	'mv \!* .xtmp && cp .xtmp \!* && rm -f .xtmp'
+v	'vim'
+vl	'vile'
 xc	'xcalc -rpn -fg white -bg midnightblue'
 xf.csh	setenv SSH_AUTH_SOCK `find $PREFIX/tmp/ssh* -name "agent*" -print | head -1`
 xf.sh	export SSH_AUTH_SOCK=`find $PREFIX/tmp -name "agent*" -print | head -1`
-tund	'ssh -v -D 2080 z2'
+tun	'ssh -D 2080 zb'
 xk.csh	echo "setenv SSH_AUTH_SOCK $SSH_AUTH_SOCK"
 xk.sh	echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 xfs	'fc-list | cut -f2 -d: | grep -i mono | sort -u'
