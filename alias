@@ -11,6 +11,7 @@ gd	git diff -b .
 ggo	git checkout
 gl	git log --abbrev-commit -8
 glo	git log --oneline -44
+grb	git rebase --continue
 gs	git status -s -b
 gup	'git pull --rebase origin master'
 jk	cd $PROJ
