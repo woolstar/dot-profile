@@ -6,14 +6,15 @@ D	ls -C --group-directories-first --color=auto -1
 dte	d -trl | tail
 e	vim
 gb	git branch
+gc	gitclean.pl
 gca	git commit --amend
 gd	git diff -b .
 ggo	git checkout
 gl	git log --abbrev-commit -8
+gll	git log --abbrev-commit
 glo	git log --oneline -44
 grb	git rebase --continue
 gs	git status -s -b
-gup	'git pull --rebase origin master'
 jk	cd $PROJ
 k	kill -9
 l	clear
@@ -22,14 +23,10 @@ ve	vile
 pd	pushd
 po	popd
 ifi	"find . -iname '*'\!*'*' -print"
-ma	make
-mi	"make -f make.$CPU"
 mu	'sudo mount -t drvfs'
 q	'echo cd $PWD'
 qj.csh	"dirs -L ~/.qdir"
 qp.csh	"dirs -S ~/.qdir ; echo pushed"
-qv	"cat ~/_places"
-qe	"vim ~/_places"
 sapt	'sudo apt'
 ta	'tmux new-session --target 0'
 th	'tmux attach'
